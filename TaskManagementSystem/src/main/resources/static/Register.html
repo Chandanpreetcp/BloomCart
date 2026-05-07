@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register Page</title>
+</head>
+<body>
+<a href="login.html">Already registered? Login here</a>
+<h2>Register Below!</h2>
+<br/><br/>
+<form action = "/user/Register" method = "post">
+	name: <input type = "text" name = "name" placeholder = "Enter your name"required>
+	<br/><br/>
+	email :<input type = "email" name = "email" placeholder = "Enter your email" required>
+	<br/><br/>
+	password: <input type = "password" name = "password" id="password" placeholder = "Enter your password" required>
+	<button>Submit</button>
+</form>
+
+<script>
+function validatePassword(){
+    let password = document.getElementById("password").value;
+    let msg = document.getElementById("message");
+
+    let pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$/;
+
+    if(pattern.test(password)){
+        msg.innerHTML = "Strong Password";
+        msg.style.color = "green";
+    } 
+    else{
+        msg.innerHTML = "Password must contain uppercase, lowercase, number, special character and be at least 8 characters";
+        msg.style.color = "red";
+    }
+}
+</script>
+</body>
+</html>
