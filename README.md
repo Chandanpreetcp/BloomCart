@@ -72,13 +72,26 @@ BloomCart
 
 ## 📸 Screenshots
 
-> Add screenshots of:
-- Login Page
-- Signup Page
-- Product Page
-- Database Tables
+### Login Page
+![Login Page](screenshots/Login.png)
 
----
+### Signup Page
+![Signup Page](screenshots/Sign Up.png)
+
+### Products Page
+![Products Page](screenshots/Products.png)
+
+### About Us Page
+![About Us Page](screenshots/About BloomCart.png)
+
+### Home Page
+![Home Page](screenshots/HomePage.png)
+
+### Categories Page
+![Categories Page](screenshots/Categories.png)
+
+### Contact Us Page
+![Contact Us Page](screenshots/Contact Us.png)
 
 ## 🧠 Key Learning Outcomes
 - Full-stack web application development
