@@ -76,13 +76,13 @@ BloomCart
 ![Login Page](screenshots/Login.png)
 
 ### Signup Page
-![Signup Page](screenshots/Sign Up.png)
+![Signup Page](screenshots/SignUp.png)
 
 ### Products Page
 ![Products Page](screenshots/Products.png)
 
 ### About Us Page
-![About Us Page](screenshots/About BloomCart.png)
+![About Us Page](screenshots/AboutUs.png)
 
 ### Home Page
 ![Home Page](screenshots/HomePage.png)
@@ -91,7 +91,7 @@ BloomCart
 ![Categories Page](screenshots/Categories.png)
 
 ### Contact Us Page
-![Contact Us Page](screenshots/Contact Us.png)
+![Contact Us Page](screenshots/ContactUs.png)
 
 ## 🧠 Key Learning Outcomes
 - Full-stack web application development
