@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="/css/productStyle.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+ <!-- Overlay -->
+    <div class="overlay">
+    <div class="navbar">
+    <div class="BloomCart">
+    <span>BloomCart</span>
+    </div>
+    
+    <div class="center-nav">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="categories.html">Categories</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="ContactUs.html">Contact Us</a>
+    </div>
+    
+    <div class="nav-right">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-regular fa-circle-user"></i>
+   <div class="cart-icon">
+<a href="cart.html">
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span id="cart-count">0</span>
+</a>
+</div>
+    </div>
+    </div>
+    
+    
+    <div class="products-page">
+
+    <!-- LEFT SIDEBAR -->
+    <div class="sidebar">
+
+        <h2>Categories</h2>
+
+        <ul>
+            <li>Flowers</li>
+            <li>Cakes</li>
+            <li>Gifts</li>
+            <li>Combos</li>
+            <li>Birthday</li>
+            <li>Hampers</li>
+        </ul>
+
+        <h2>Filter</h2>
+
+        <ul>
+            <li>Price Low to High</li>
+            <li>Price High to Low</li>
+            <li>Latest</li>
+            <li>Popular</li>
+        </ul>
+
+    </div>
+
+
+    <!-- RIGHT PRODUCTS AREA -->
+    <div class="products-container">
+
+        <div class="top-bar">
+            <h1>Our Products</h1>
+
+            
+        </div>
+
+
+        <!-- PRODUCTS GRID -->
+        <div class="products-grid">
+
+            <div class="product-card">
+                <img src="/images/rose_bouquet.jpg">
+                <h3>Rose Bouquet</h3>
+                <p>₹999</p>
+                <button class="cart-btn">
+    Add to Cart
+</button>
+
+            </div>
+
+            <div class="product-card">
+                <img src="/images/choclate cake.jpg">
+                <h3>Chocolate Cake</h3>
+                <p>₹799</p>
+                <button class="cart-btn">
+    Add to Cart
+</button>
+
+            </div>
+
+            <div class="product-card">
+                <img src="/images/gift hamper.jpg">
+                <h3>Gift Hamper</h3>
+                <p>₹1499</p>
+                <button class="cart-btn">
+    Add to Cart
+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    </div>
+    <script>
+
+    let cartCount = 0;
+
+    let buttons =
+    document.querySelectorAll(".cart-btn");
+
+    let cartDisplay =
+    document.getElementById("cart-count");
+
+
+    buttons.forEach(function(button){
+
+        button.addEventListener("click", function(){
+
+            cartCount++;
+
+            cartDisplay.innerText = cartCount;
+
+            alert("Product Added To Cart!");
+
+        });
+
+    });
+
+</script>
+<script src="/js/products.js"></script>
+</body>
+</html>

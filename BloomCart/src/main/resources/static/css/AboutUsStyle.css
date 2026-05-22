@@ -1,0 +1,186 @@
+/* ================= ABOUT SECTION ================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+	height:100%;
+}
+body{
+    height: 100vh;
+	background-image:url("../images/roses.jpg");
+    overflow-x: hidden;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+
+    background: rgba(0,0,0,0.25);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.logo{
+	display: flex;
+    align-items: center;
+	color : #f5e6d3;
+	font-size:30px;
+	font-weight: bold;
+}
+.logo:hover{
+	color:#b70000;
+	cursor:pointer;
+}
+/* CENTER NAV LINKS */
+.center-nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.center-nav a{
+    text-decoration: none;
+    color: #f5e6d3;
+    font-size: 22px;
+    transition: 0.3s;
+}
+.center-nav a:hover{
+    color: #b70000;
+}
+
+/* RIGHT SIDE ICONS */
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-right i{
+    color: #f5e6d3;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-right i:hover{
+    color: #b70000;
+}
+/* Dark Overlay */
+
+.overlay{
+    min-height: 100vh;
+    min-width: 100vh;
+
+    background: rgba(0,0,0,0.50);
+
+   
+}
+.about-section{
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px;
+    color: white;
+}
+
+.about-heading{
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 60px;
+    color: #f5e6d3;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* IMAGE */
+
+.about-image img{
+    width: 450px;
+    height: 500px;
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+/* CONTENT */
+
+.about-content{
+    width: 500px;
+}
+
+.about-content h2{
+    font-size: 42px;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.about-content p{
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #ddd;
+}
+
+.explore-btn{
+
+    display: inline-block;
+
+    padding: 15px 35px;
+
+    border-radius: 40px;
+
+    background: #b70000;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.explore-btn:hover{
+
+    background: #ff2e2e;
+
+    transform: scale(1.05);
+}
+@media(max-width: 900px){
+
+    .navbar{
+
+        flex-direction: column;
+
+        height: auto;
+
+        padding: 20px;
+    }
+
+    .center-nav{
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        margin: 20px 0;
+    }
+
+}
