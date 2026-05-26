@@ -24,7 +24,7 @@ public class Cart {
     private Product product;
 	@Column
     private int quantity;
-	
+
 	public Long getCartId() {
 		return cartId;
 	}

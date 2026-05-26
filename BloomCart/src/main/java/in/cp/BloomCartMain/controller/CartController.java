@@ -20,31 +20,31 @@ import in.cp.BloomCartMain.services.CartService;
 public class CartController {
 	@Autowired
 	private CartService cartService;
-	
+
 	// add items to cart
 	@PostMapping("/add")
 	public Cart addToCart(@RequestBody Cart cart) {
 		return cartService.addToCart(cart);
 	}
-	
+
 	// Update cart item
 	@PutMapping("/update/{cartId}")
 	   public  Cart updateCart(@PathVariable Long cartId, @RequestBody Cart updatedCart) {
 		return cartService.updateCart(cartId, updatedCart);
 	   }
-	   
+
 	   // delete Cart
 	@DeleteMapping("/delete/{cartId}")
 	   public void deleteCart(@PathVariable Long cartId) {
 		   cartService.deleteCart(cartId);
 	   }
-	   
+
 	   // get specific cart item
 	@GetMapping("/getCartItem/{cartId}")
 	   public Cart getOneCartItem(@PathVariable Long cartId) {
 		   return cartService.getOneCartItem(cartId);
 	}
-	
+
 	// get all cart items of user
 	@GetMapping("/getAllUserCartItems/{userId}")
 		public List<Cart> getAllCartItems(@PathVariable Long userId){

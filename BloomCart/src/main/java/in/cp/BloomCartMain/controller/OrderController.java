@@ -20,25 +20,25 @@ import in.cp.BloomCartMain.services.OrderService;
 public class OrderController {
 	@Autowired
 	private OrderService orderService;
-	
+
 	// place order
 	@PostMapping("/placeOrder")
 	public Order placeOrder(@RequestBody Order order) {
 		return orderService.placeOrder(order);
 	}
-	
+
 	// get specific user's order
 	@GetMapping("/getUserOrder/{userId}")
 	public List<Order> getOrdersByUsers(@PathVariable Long userId) {
 		return orderService.getOrdersByUsers(userId);
 	}
-	
+
 	// Get order by id
 	@GetMapping("/getOrderById/{orderId}")
 	    public Order getOrderById(@PathVariable Long orderId) {
 	    	return orderService.getOrderById(orderId);
 	    }
-	    
+
 	    // update order
 	@PutMapping("/update/{orderId}")
 	    public Order updateOrder(@PathVariable Long orderId , @RequestBody Order updatedOrder) {

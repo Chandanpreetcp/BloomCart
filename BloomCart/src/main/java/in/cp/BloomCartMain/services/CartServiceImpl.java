@@ -1,7 +1,6 @@
 package in.cp.BloomCartMain.services;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,11 +14,11 @@ import in.cp.BloomCartMain.repositories.UserRepository;
 
 @Service
 public class CartServiceImpl implements CartService {
-	@Autowired 
+	@Autowired
 	private CartRepository cartRepo;
-	@Autowired 
+	@Autowired
 	private ProductRepository productRepo;
-	@Autowired 
+	@Autowired
 	private UserRepository userRepo;
 
 	// add items to cart

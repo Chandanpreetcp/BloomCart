@@ -56,7 +56,7 @@ public class Order {
 	}
 	public void setOrderDate(LocalDate orderDate) {
 		this.orderDate = orderDate;
-	} 
-	
+	}
+
 
 }

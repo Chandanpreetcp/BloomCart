@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService{
 	public User createUser(User user) {
 		return userRepo.save(user);
 	}
-	
+
 	// login users
 	@Override
 	public User loginUser(String email, String password) {
@@ -56,9 +56,9 @@ public class UserServiceImpl implements UserService{
 	    }else {
 	    	throw new RuntimeException("User not found");
 	    }
-		
+
 	}
 
-	
+
 
 }

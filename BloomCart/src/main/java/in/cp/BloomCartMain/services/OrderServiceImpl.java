@@ -10,7 +10,7 @@ import in.cp.BloomCartMain.repositories.OrderRepository;
 
 @Service
 public class OrderServiceImpl implements OrderService{
-	@Autowired 
+	@Autowired
 	private OrderRepository orderRepo;
 
 	// place order
@@ -48,6 +48,6 @@ public class OrderServiceImpl implements OrderService{
 	@Override
 	public void deleteOrder(Long orderId) {
 		orderRepo.deleteById(orderId);
-		
+
 	}
 }
