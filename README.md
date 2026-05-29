@@ -2,15 +2,18 @@
 BloomCart is a full-stack e-commerce web application built using Java, Spring Boot, PostgreSQL, HTML, CSS, and JavaScript. It features user authentication, RESTful APIs, database-driven product management, and frontend-backend integration, showcasing practical full-stack web development concepts.
 ## 🚀 Features
 
-- 🔐 User Signup & Login Authentication
-- 🛒 E-commerce Product Listing System
-- 🌐 RESTful API Development using Spring Boot
-- 🗄️ PostgreSQL Database Integration
-- 🔄 Dynamic Frontend-Backend Communication
-- 📦 Product Data Fetching from Database
-- 🎨 Responsive UI using HTML, CSS & JavaScript
-- ⚡ Fetch API Integration for Real-Time Data Handling
-- 
+- User Signup & Login Authentication
+- E-commerce Product Listing System
+- RESTful API Development using Spring Boot
+- PostgreSQL Database Integration
+- Dynamic Frontend-Backend Communication
+- Product Data Fetching from Database
+- Responsive UI using HTML, CSS & JavaScript
+- Fetch API Integration for Real-Time Data Handling
+- Dockerized Backend
+- PostgreSQL Integration
+- Docker Compose Multi-Container Setup
+  
 ## 🛠️ Tech Stack
 
 ### Backend
@@ -19,6 +22,8 @@ BloomCart is a full-stack e-commerce web application built using Java, Spring Bo
 - Spring Data JPA
 - Hibernate
 - REST APIs
+- Docker containerization
+- Docker compose
 
 ### Frontend
 - HTML5
@@ -32,7 +37,8 @@ BloomCart is a full-stack e-commerce web application built using Java, Spring Bo
 - Eclipse IDE
 - Git & GitHub
 - Postman
-- 
+- Docker desktop
+  
 ## 📂 Project Architecture
 BloomCart
 │
@@ -52,6 +58,8 @@ BloomCart
 │   └── application.properties
 │
 └── pom.xml
+|__Dockerfile
+|__ docker-compose.yml
 
 ## 🔗 Core Functionalities
 
@@ -100,7 +108,8 @@ BloomCart
 - Frontend-backend communication
 - Dynamic DOM manipulation using JavaScript
 - Project structuring and version control using GitHub
-- 
+- Deployment of projects in real-world
+  
 ## 🚀 Future Enhancements
 - Shopping Cart System
 - Order Management
@@ -108,7 +117,6 @@ BloomCart
 - Product Search & Filters
 - Admin Dashboard
 - JWT Authentication
-- Deployment on Cloud Platforms
 
 ## 👨‍💻 Author
 Developed by Chandanpreet kaur
@@ -121,3 +129,4 @@ This project demonstrates practical implementation of:
 - Database-driven applications
 - Frontend integration
 - Real-world e-commerce workflow concepts
+- Real-world deployment of projects
