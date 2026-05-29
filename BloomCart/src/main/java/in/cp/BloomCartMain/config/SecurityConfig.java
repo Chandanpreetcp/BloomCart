@@ -27,7 +27,16 @@ public class SecurityConfig {
 		.authorizeHttpRequests(auth -> auth
 				.requestMatchers("/auth/**").permitAll()
 				.requestMatchers("/Product/add").hasRole("ADMIN")
-				.requestMatchers("/Product/all").hasAnyRole("USER" , "ADMIN")
+				.requestMatchers("/Product/all").permitAll()
+				.requestMatchers("/").permitAll()
+				.requestMatchers(
+						"/",
+					    "/*.html",
+				        "/css/**",
+				        "/js/**",
+				        "/images/**",
+				        "/auth/**"
+				).permitAll()
 				.anyRequest().authenticated()
 				)
 		.addFilterBefore(

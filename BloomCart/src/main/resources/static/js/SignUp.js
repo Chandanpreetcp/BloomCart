@@ -26,7 +26,7 @@ signupForm.addEventListener("submit", async function(e){
     try{
 
         const response = await fetch(
-            "http://localhost:8080/User/create",
+            "http://localhost:8080/auth/signup",
 
             {
 

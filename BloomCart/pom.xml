@@ -63,16 +63,6 @@
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.chandan.SpringBoot1</groupId>
-			<artifactId>SpringBoot1</artifactId>
-			<version>1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.chandan.SpringBootJDBC1</groupId>
-			<artifactId>SpringBootJDBC1</artifactId>
-			<version>1.0</version>
-		</dependency>
 		
 		<dependency>
     <groupId>org.springframework.boot</groupId>
