@@ -238,24 +238,56 @@ body{
     background: #ff2e2e;
     transform: scale(1.03);
 }
-@media(max-width: 900px){
+@media (max-width: 768px){
 
     .navbar{
-
         flex-direction: column;
-
         height: auto;
-
         padding: 20px;
     }
 
     .center-nav{
-
         flex-wrap: wrap;
-
         justify-content: center;
-
+        gap: 15px;
         margin: 20px 0;
     }
 
+    .center-nav a{
+        font-size: 16px;
+    }
+
+    .cart-container{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .cart-summary{
+        width: 100%;
+    }
+
+    .cart-card{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .cart-card img{
+        width: 100%;
+        max-width: 250px;
+        margin: auto;
+    }
+
+    .cart-details{
+        width: 100%;
+    }
+
+    .price{
+        font-size: 22px;
+    }
+
+    .cart-heading{
+        font-size: 36px;
+        text-align: center;
+    }
 }

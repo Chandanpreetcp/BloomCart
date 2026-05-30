@@ -32,7 +32,7 @@ function displayProducts(products) {
 document.addEventListener("DOMContentLoaded", loadProducts);
 
 function loadProducts() {
-    fetch("http://localhost:8080/Product/all")
+    fetch("http://192.168.1.41:8080/Product/all")
         .then(res => res.json())
         .then(data => {
             displayProducts(data);

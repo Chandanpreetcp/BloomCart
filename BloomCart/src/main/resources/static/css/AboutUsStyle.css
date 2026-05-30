@@ -78,7 +78,7 @@ body{
 
 .overlay{
     min-height: 100vh;
-    min-width: 100vh;
+    width: 100%;
 
     background: rgba(0,0,0,0.50);
 
@@ -163,24 +163,63 @@ body{
 
     transform: scale(1.05);
 }
-@media(max-width: 900px){
+@media (max-width: 768px){
 
     .navbar{
-
         flex-direction: column;
-
         height: auto;
-
         padding: 20px;
     }
 
     .center-nav{
-
         flex-wrap: wrap;
-
         justify-content: center;
-
+        gap: 15px;
         margin: 20px 0;
     }
 
+    .center-nav a{
+        font-size: 16px;
+    }
+
+    .about-section{
+        padding: 30px 20px;
+    }
+
+    .about-heading{
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .about-container{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .about-image,
+    .about-content{
+        width: 100%;
+    }
+
+    .about-image img{
+        width: 100%;
+        height: auto;
+    }
+
+    .about-content{
+        text-align: center;
+    }
+
+    .about-content h2{
+        font-size: 28px;
+    }
+
+    .about-content p{
+        font-size: 16px;
+    }
+
+    .explore-btn{
+        display: inline-block;
+        margin-top: 15px;
+    }
 }

@@ -28,7 +28,7 @@ body{
 .overlay{
 
     min-height: 100vh;
-	min-width:100vh;
+	width:100%;
     background: rgba(0,0,0,0.5);
 }
 
@@ -70,7 +70,6 @@ body{
 .center-nav{
 
     display: flex;
-
     gap: 45px;
     
 }
@@ -304,24 +303,48 @@ body{
 
     text-decoration: underline;
 }
-@media(max-width: 900px){
+@media (max-width: 768px){
 
     .navbar{
-
         flex-direction: column;
-
         height: auto;
-
         padding: 20px;
     }
 
     .center-nav{
-
         flex-wrap: wrap;
-
         justify-content: center;
-
+        gap: 15px;
         margin: 20px 0;
     }
 
+    .login-section{
+        padding: 20px;
+    }
+
+    .login-box{
+        width: 100%;
+        max-width: 400px;
+        padding: 25px;
+    }
+
+    .login-box h1{
+        font-size: 32px;
+    }
+
+    .login-box p{
+        font-size: 14px;
+    }
+
+    .login-form input{
+        width: 100%;
+    }
+
+    .login-form button{
+        width: 100%;
+    }
+
+    .nav-right{
+        gap: 15px;
+    }
 }

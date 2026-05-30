@@ -20,7 +20,7 @@ loginForm.addEventListener("submit", async function(e){
     try{
 
         const response = await fetch(
-            "http://localhost:8080/auth/login",
+            "http://192.168.1.41:8080/auth/login",
 
             {
 
