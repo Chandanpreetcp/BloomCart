@@ -13,6 +13,7 @@ BloomCart is a full-stack e-commerce web application built using Java, Spring Bo
 - Dockerized Backend
 - PostgreSQL Integration
 - Docker Compose Multi-Container Setup
+- Responsiveness across different screen sizes like phones , tablets , laptops etc.
   
 ## 🛠️ Tech Stack
 
@@ -130,3 +131,4 @@ This project demonstrates practical implementation of:
 - Frontend integration
 - Real-world e-commerce workflow concepts
 - Real-world deployment of projects
+- Responsive UI for different screen sizes
